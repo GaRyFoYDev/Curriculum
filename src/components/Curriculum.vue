@@ -1,7 +1,7 @@
 <template>
 <div class="container">
-    <Left  class="container_left"/>
-    <Right class="container_right" />
+    <Left  class="left_container"/>
+    <Right class="right_container" />
 </div>
 
 </template>
@@ -26,11 +26,12 @@ import Right from "./right.vue";
     box-shadow: 0px 30px 40px rgba(0,0,0,0.3);
     display: flex;
 
-    &_left{
-        width: 70%;
-        height: 100%;
-        background-color: var(--grey-2);
-    }
+@media screen and (max-width: 768px) {
+    width: 90%;
+    flex-direction: column;
+}
+ 
+   
 }
 
 
