@@ -20,8 +20,8 @@ import Right from "./right.vue";
 
 .container{
     background-color: var(--white);
-    width: 50%;
-    height: 100vh;
+    width: 65%;
+    min-height: 100vh;
     margin: 50px auto;
     box-shadow: 0px 30px 40px rgba(0,0,0,0.3);
     display: flex;

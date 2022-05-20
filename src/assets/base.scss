@@ -10,21 +10,47 @@
 
 
 //reset
-h1,h2,h3,h3{
+h1,h2,h3,h3,h4{
     margin: 0;
     text-transform: uppercase;
 };
 
 p{
     margin: 0;
+    color: var(--grey-3);
 }
+
+a {
+    color: var(--text-color);
+    text-decoration: none;
+  }
+
+ul{
+    padding: 0;
+    list-style: none;
+    
+}
+ul li::before {
+    content: "\2022";
+    color: var(--primary-1);
+    display: inline-block; 
+    width: 1rem;
+    font-size: 20px;
+    
+   
+  }
+li{
+    margin-bottom: 5px;
+    
+}
+
 
 
 
 body {
     min-height: 100%;
     min-width: 320px;
-    
+
     padding: 0;
     margin: 0;
     font-family: var(--font-family);
